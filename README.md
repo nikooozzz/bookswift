@@ -17,6 +17,9 @@ Bookswift can be installed through the [Firefox Addon Store](https://addons.mozi
 
 All contributions in forms of bug reports, feature requests, and Pull Requests are appreciated. Before contributing, make sure to read [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines regarding contributions.
 
+## Privacy Policy
+Bookswift respects your privacy and collects **zero data**. Read our full [Privacy Policy](docs/PRIVACY.md)
+
 ## License
 
 Bookswift is licensed under MIT standards, meaning you are allowed to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the extensions. More info is available in the [LICENSE](LICENSE) file.
