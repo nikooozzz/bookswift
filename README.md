@@ -4,6 +4,7 @@
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/nikooozzz/bookswift/release) ![Mozilla Add-on Version](https://img.shields.io/amo/v/:84d0309fe62f4014a262) ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+*Our official docs exist at https://nikooozzz.github.io/bookswift*.
 
 ## Overview
 
