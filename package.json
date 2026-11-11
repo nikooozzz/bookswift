@@ -1,6 +1,6 @@
 {
   "name": "bookswift",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimalist center-screen bookmark launcher for Firefox.",
   "scripts": {
     "dev": "web-ext run --source-dir src",
