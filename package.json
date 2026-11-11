@@ -6,7 +6,7 @@
     "dev": "web-ext run --source-dir src",
     "build": "web-ext build --source-dir src --artifacts-dir web-ext-artifacts",
     "lint": "web-ext lint --source-dir src",
-    "sign": "web-ext sign --source-dir src --channel=listed --amo-metadata src/amo-metadata.json"
+    "sign": "web-ext sign --source-dir src --channel=listed --amo-metadata src/amo-metadata.json --approval-timeout 0"
   },
   "devDependencies": {
     "web-ext": "^10.8.0"
