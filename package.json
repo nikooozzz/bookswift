@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "web-ext run --source-dir src",
     "build": "web-ext build --source-dir src",
-    "sign": "web-ext sign --source-dir src --channel=listed"
+    "sign": "web-ext sign --source-dir src --channel=listed --amo-metadata-license=MIT"
   },
   "devDependencies": {
     "web-ext": "^10.8.0"
