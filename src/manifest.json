@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Bookswift",
+  "version": "1.0.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bookswift@nikoware.local"
+    }
+  },
+  "description": "Minimalist center-screen bookmark launcher with search.",
+  "permissions": [
+    "bookmarks",
+    "activeTab"
+  ],
+  "commands": {
+    "toggle-launcher": {
+      "suggested_key": {
+        "default": "Ctrl+Space",
+        "mac": "Command+Space"
+      },
+      "description": "Toggle Bookswift"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

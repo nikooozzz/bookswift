@@ -1,0 +1,28 @@
+name: Build and Sign Bookswift
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+      - run: npm install
+      - name: Sign Extension
+        run: npx web-ext sign --source-dir src --channel=listed
+        env:
+          WEB_EXT_API_KEY: ${{ secrets.AMO_JWT_ISSUER }}
+          WEB_EXT_API_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+      
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: web-ext-artifacts/*.xpi
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
