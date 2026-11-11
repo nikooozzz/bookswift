@@ -4,7 +4,7 @@
   "description": "Minimalist center-screen bookmark launcher for Firefox.",
   "scripts": {
     "dev": "web-ext run --source-dir src",
-    "build": "web-ext build --source-dir src",
+    "build": "web-ext build --source-dir src --artifacts-dir web-ext-artifacts",
     "sign": "web-ext sign --source-dir src --channel=listed --amo-metadata src/amo-metadata.json"
   },
   "devDependencies": {

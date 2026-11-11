@@ -1,0 +1,11 @@
+{
+  "summary": {
+    "en-US": "Minimalist center-screen bookmark launcher with search."
+  },
+  "categories": [
+    "search-tools"
+  ],
+  "version": {
+    "license": "MIT"
+  }
+}

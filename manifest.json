@@ -4,7 +4,12 @@
   "version": "1.0.0",
   "browser_specific_settings": {
     "gecko": {
-      "id": "bookswift@nikoware.local"
+      "id": "bookswift@nikoware.local",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   },
   "description": "Minimalist center-screen bookmark launcher with search.",
@@ -23,7 +28,7 @@
   },
   "background": {
     "scripts": [
-      "background.js"
+      "src/background.js"
     ]
   },
   "content_scripts": [
@@ -32,7 +37,7 @@
         "<all_urls>"
       ],
       "js": [
-        "content.js"
+        "src/content.js"
       ]
     }
   ]
